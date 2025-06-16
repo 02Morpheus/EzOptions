@@ -1696,7 +1696,7 @@ def chart_settings():
 
         # Initialize strike range in session state
         if 'strike_range' not in st.session_state:
-            st.session_state.strike_range = 20.0
+            st.session_state.strike_range = 30.0
         
         # Add strike range control
         st.session_state.strike_range = st.number_input(
@@ -1737,7 +1737,7 @@ def chart_settings():
 
         # Add refresh rate control before chart type
         if 'refresh_rate' not in st.session_state:
-            st.session_state.refresh_rate = 10  # Default refresh rate
+            st.session_state.refresh_rate = 300  # Default refresh rate
         
         new_refresh_rate = st.number_input(
             "Auto-Refresh Rate (seconds)",
