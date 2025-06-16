@@ -1677,11 +1677,11 @@ def chart_settings():
         st.write("Show/Hide Elements:")
         # Initialize visibility settings if not already set
         if 'show_calls' not in st.session_state:
-            st.session_state.show_calls = False
+            st.session_state.show_calls = True
         if 'show_puts' not in st.session_state:
-            st.session_state.show_puts = False
+            st.session_state.show_puts = True
         if 'show_net' not in st.session_state:
-            st.session_state.show_net = True
+            st.session_state.show_net = False
 
         # Visibility toggles
         show_calls = st.checkbox("Show Calls", value=st.session_state.show_calls)
